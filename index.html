@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--to display the site properly-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./snap-images/favicon-32x32.png">
+    <link href="style.css" rel="stylesheet">
+    <title>Snap - The World's Leading Seamless Remote App</title>
+</head>
+<body>
+    
+    <section class="wrapper">
+        <header>
+            <img src="./snap-images/logo.svg" class="logo">
+            <nav>
+                <ul id="sidebar">
+                    <div class="links">
+                        <div class="features">
+                            <button>Features
+                                <img src="./snap-images/icon-arrow-down.svg">
+                            </button>
+                            <ul>
+                                <li><a href="#"><img src="./snap-images/icon-todo.svg">Todo List</a></li>
+                                <li><a href="#"><img src="./snap-images/icon-calendar.svg">Calender</a></li>
+                                <li><a href="#"><img src="./snap-images/icon-reminders.svg">Reminders</a></li>
+                                <li><a href="#"><img src="./snap-images/icon-planning.svg">Planning</a></li>
+                            </ul>
+                        </div>
+                        <div class="company">
+                            <button>Company
+                                <img src="./snap-images/icon-arrow-down.svg">
+                            </button>
+                            <ul>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                        <button><a href="#">Careers</a></button>
+                        <button><a href="#">About</a></button>
+                        
+                    </div>
+                    <div class="ctas">
+                        <a href="./login.html" class="cta">Login</a>
+                        <a href="./register.html" class="cta-2">Register</a>
+                    </div>
+
+                </ul>
+            </nav>
+            <div class="container">
+                <span id="bar1"></span>
+                <span id="bar2"></span>
+                <span id="bar3"></span>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="left-item">
+                <div class="intro-text">
+                    <div class="title">
+                        <h1>Make</h1>
+                        <h1>remote work</h1>
+
+                    </div>
+                    <div class="subtitle">
+                        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar</p>
+                        
+                    </div>
+                    <a href="#" class="cta-3">
+                        Learn more
+                    </a>
+                    <div class="support">
+                    <img src="./snap-images/client-databiz.svg" alt="">
+                    <img src="./snap-images/client-audiophile.svg" alt="">
+                    <img src="./snap-images/client-meet.svg" alt="">
+                    <img src="./snap-images/client-maker.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right-item">
+                <img src="./snap-images/image-hero-desktop.png" alt="" class="desktop">
+                <img src="./snap-images/image-hero-mobile.png" alt="" class="mobile">
+            </div>
+
+        </section>
+    </section>
+    <script>
+        const container = document.querySelector(".container");
+        const sidebar = document.querySelector("#sidebar");
+        container.addEventListener("click", function() {
+            container.classList.toggle("change")
+            sidebar.classList.toggle("push")
+        }) 
+    </script>
+</body>
+</html>
